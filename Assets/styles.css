@@ -1,0 +1,184 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.navbar{
+    background: rgba(105, 158, 191, 0.9);
+}
+
+.imgPanier{
+    width: 2rem;
+}
+
+.imgLogo{
+    max-width: 7rem;
+    width: 100%;
+    height: auto;
+}
+
+.imgFond{
+    width: 100%;
+    min-height: 100%;
+    background-position: center;
+    margin-top: initial;
+}
+
+.baniere{
+    height: 50vh;
+    overflow: hidden;
+}
+
+.navigation{
+    font-weight: bold;
+}
+
+.titleP{
+    font-weight: bold;
+    font-size: large;
+    text-align: center;
+}
+
+footer{
+    background-color: #91cdf2;
+    margin-top: 1rem;
+    padding: 1rem;
+    font-weight: bold;
+    text-align: center;
+}
+
+.littleLogo{
+    padding: 0.5rem;
+    font-size: 2rem;
+}
+
+.logoShop{
+    font-size: 1.5rem;
+}
+.imgItems{
+    height: auto;
+    max-width: 500px;
+    width: 100%;
+}
+
+.selectionItem{
+    width: 100%;
+}
+
+.priceItem{
+    margin: 20px 0px 0px 0px;
+    font-weight: bold;
+    font-size: 1.3rem;
+}
+
+.deliveredItem{
+    font-style: italic;
+    font-size: 0.8rem;
+    color: grey;
+}
+
+.card{
+    border: 0rem;
+    background-color: #FFF8F8;
+    border-radius: 10%;
+    cursor: pointer;
+}
+
+.titlePhones{
+    margin-bottom: 20px;
+    margin-top: 10px;
+    margin-left: 30px;
+}
+
+
+.card:hover{
+    opacity: 0.5;
+}
+
+.beforePriceItem{
+    font-size: 0.7rem;
+    font-style: italic;
+}
+
+.priceItem{
+    font-size: 1rem;
+    font-style: normal;
+    color: red;
+}
+
+.card-img-top{
+    width: 70%;
+    height: 60%;
+}
+
+.garantieItem{
+    font-size: 0.7rem;
+    font-style: italic;
+    color: gray;
+}
+
+.container-fluid{
+    text-align: justify;
+}
+
+.visibility{
+    display: block!important;
+}
+.total{
+    font-style: italic;
+}
+
+.imgPanierArticle{
+    height: 5rem;
+    margin-right: 2rem;
+}
+.prixQtqSuppItem{
+    text-align: right;
+    margin-left: auto;
+}
+
+.suppItemPanier{
+    padding: 1rem;
+}
+
+#snackbar {
+    visibility: hidden;
+    min-width: 250px;
+    margin-left: -125px;
+    background-color:white;
+    color:black;
+    text-align: center;
+    border-radius: 2px;
+    padding: 16px;
+    position: fixed;
+    z-index: 1;
+    left: 45%;
+    bottom: 30px;
+    font-size: 17px;
+  }
+  
+  #snackbar.show {
+    visibility: visible;
+    -webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
+    animation: fadein 0.5s, fadeout 0.5s 2.5s;
+  }
+  
+  @-webkit-keyframes fadein {
+    from {bottom: 0; opacity: 0;} 
+    to {bottom: 30px; opacity: 1;}
+  }
+  
+  @keyframes fadein {
+    from {bottom: 0; opacity: 0;}
+    to {bottom: 30px; opacity: 1;}
+  }
+  
+  @-webkit-keyframes fadeout {
+    from {bottom: 30px; opacity: 1;} 
+    to {bottom: 0; opacity: 0;}
+  }
+  
+  @keyframes fadeout {
+    from {bottom: 30px; opacity: 1;}
+    to {bottom: 0; opacity: 0;}
+  }

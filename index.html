@@ -1,0 +1,755 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Acceuil</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+        integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="Assets/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+
+<body>
+
+
+
+
+<!-- Barre de navigation -->
+        <div class="baniere">
+            <img src="Assets/img/banniere.jpg" class="imgFond" alt="" srcset="">
+        </div>
+    
+        <nav class="navbar navbar-expand-lg navbar-dark sticky-top">
+            <div class="collapse navbar-collapse d-flex justify-content-between" id="navbarNav">
+                <ul class="navbar-nav text-uppercase pl-5">
+                    <div class="d-flex">
+                        <li class="nav-item active">
+                            <a class="nav-link navigation pr-5" id="lienForAcceuil" href="#">accueil</a>
+                        </li>
+                        <li class="nav-item active align-items-center">
+                            <a class="nav-link navigation" id="lienForTel" href="#">nos mobiles</a>
+                        </li>
+                    </div>
+                </ul>
+                <div class="navbar-nav d-flex">
+                    <li class="nav-item active">
+                        <a href="#panier" class="nav-link pr-5" data-target="#modalPanier" data-toggle="modal"><i class="fas fa-cart-arrow-down logoShop"></i></a>
+                    </li>
+                </div>
+            </div>
+        </nav>
+<!-- Fin de barre de navigation -->
+
+    <!-- Container fluid page list items -->
+    <div class="container-fluid d-none" id="contentForTel">
+
+        <!-- liste des telephones de la marque Apple -->
+            <div class="row d-flex justify-content-center">
+                <h1 class="col-12 titlePhones text-center">La marque Apple:</h1>
+                <div class="col-6 col-sm-4 col-md-3 col-lg-2" data-target="#modalIphone12ProMax" data-toggle="modal">
+                    <div class="card">
+                        <div class="allCard">
+                            <div class="card">
+                                <img class="card-img-top" src="Assets/img/iphone12ProMaxSeul.png"
+                                    alt="Card image cap" title="image iphone 12 pro Max">
+                                <div class="card-body">
+                                    <p>iPhone 12 Pro Max</p>
+                                    <p class="beforePriceItem">à partir de <span class="priceItem">1250,00 €</span></p>
+                                    <p class="garantieItem">Garantie : 12 mois</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="col-6 col-sm-4 col-md-3 col-lg-2" data-target="#modalIphone12Pro" data-toggle="modal">
+                    <div class="card">
+                        <div class="allCard">
+                            <div class="card">
+                                <img class="card-img-top" src="Assets/img/iphoneProMini.png"
+                                    alt="Card image cap" title="image iphone 12 pro">
+                                <div class="card-body">
+                                    <p>iPhone 12 pro</p>
+                                    <p class="beforePriceItem">à partir de <span class="priceItem">1100,00 €</span></p>
+                                    <p class="garantieItem">Garantie : 12 mois</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="col-6 col-sm-4 col-md-3 col-lg-2" data-target="#modalIphone11Pro" data-toggle="modal">
+                    <div class="card">
+                        <div class="allCard">
+                            <div class="card">
+                                <img class="card-img-top" src="Assets/img/apple-iphone-11-pro-max.png"
+                                    alt="Card image cap" title="image iphone 11 pro">
+                                <div class="card-body">
+                                    <p>iPhone 11 Pro</p>
+                                    <p class="beforePriceItem">à partir de <span class="priceItem">800,00 €</span></p>
+                                    <p class="garantieItem">Garantie : 12 mois</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="col-6 col-sm-4 col-md-3 col-lg-2" data-target="#modalIphone11" data-toggle="modal">
+                    <div class="card">
+                        <div class="allCard">
+                            <div class="card">
+                                <img class="card-img-top" src="Assets/img/iphone 11 violet.jpg"
+                                    alt="Card image cap" title="image iphone 11">
+                                <div class="card-body">
+                                    <p>iPhone 11</p>
+                                    <p class="beforePriceItem">à partir de <span class="priceItem">700,00 €</span></p>
+                                    <p class="garantieItem">Garantie : 12 mois</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        <!-- Fin des Apple -->
+    
+        <!-- liste des telephones de la marque Samsung -->
+            <div class="row d-flex justify-content-center">
+                <h1 class="titlePhones col-12 text-center">La marque Samsung:</h1>
+                <div class="col-6 col-sm-4 col-md-3 col-lg-2" data-target="#modalSamsungGalaxyS20Plus" data-toggle="modal">
+                    <div class="card">
+                        <div class="allCard">
+                            <div class="card">
+                                <img class="card-img-top" src="Assets/img/samsung S20 small.jpg"
+                                    alt="Card image cap" title="image samsung galaxy S20 plus">
+                                <div class="card-body">
+                                    <p>Samsung Galaxy S20 Plus</p>
+                                    <p class="beforePriceItem">à partir de <span class="priceItem">900,00 €</span></p>
+                                    <p class="garantieItem">Garantie : 12 mois</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-6 col-sm-4 col-md-3 col-lg-2" data-target="#modalSamsungGalaxyS10" data-toggle="modal">
+                    <div class="card">
+                        <div class="allCard">
+                            <div class="card">
+                                <img class="card-img-top" src="Assets/img/samsung-galaxy-s10-plus.jpg"
+                                    alt="Card image cap" title="image samsung galaxy S10">
+                                <div class="card-body">
+                                    <p>Samsung Galaxy S10 </p>
+                                    <p class="beforePriceItem">à partir de <span class="priceItem">800,00 €</span></p>
+                                    <p class="garantieItem">Garantie : 12 mois</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-sm-4 col-md-3 col-lg-2" data-target="#modalSamsungGalaxyS9" data-toggle="modal">
+                    <div class="card">
+                        <div class="allCard">
+                            <div class="card">
+                                <img class="card-img-top" src="Assets/img/samsungs10.jpg"
+                                    alt="Card image cap" title="image samsung galaxy S9">
+                                <div class="card-body">
+                                    <p>Samsung Galaxy S9</p>
+                                    <p class="beforePriceItem">à partir de <span class="priceItem">400,00 €</span></p>
+                                    <p class="garantieItem">Garantie : 12 mois</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="col-6 col-sm-4 col-md-3 col-lg-2" data-target="#modalSamsungGalaxyS8" data-toggle="modal">
+                    <div class="card">
+                        <div class="allCard">
+                            <div class="card">
+                                <img class="card-img-top" src="Assets/img/galaxy s8 violet.jpg"
+                                    alt="Card image cap" title="image samsung galaxy S8">
+                                <div class="card-body">
+                                    <p>Samsung Galaxy S8</p>
+                                    <p class="beforePriceItem">à partir de <span class="priceItem">300,00 €</span>
+                                    </p>
+                                    <p class="garantieItem">Garantie : 12 mois</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    
+        <!-- Fin des Samsung -->
+    
+    </div>
+    <!-- Fin container fluid page list item -->
+    
+    <!-- Début acceuil -->
+        <div id="contentForAcceuil" class="d-none visibility">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-12">
+                        <p class="titleP mt-3">Notre entreprise</p>
+                        <p class="w-75 mx-auto">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                            Sed non risus. Suspendisse lectus tortor, dignissim sit amet, adipiscing nec, ultricies sed, dolor.
+                            Cras elementum ultrices diam. Maecenas ligula massa, varius a, semper congue, euismod non, mi.
+                            Proin porttitor, orci nec nonummy molestie, enim est eleifend mi, non fermentum diam nisl sit amet erat.
+                            Duis semper. Duis arcu massa, scelerisque vitae, consequat in, pretium a, enim.
+                            Pellentesque congue. Ut in risus volutpat libero pharetra tempor. Cras vestibulum bibendum augue.
+                            Praesent egestas leo in pede. Praesent blandit odio eu enim. Pellentesque sed dui ut augue blandit sodales.
+                            Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Aliquam nibh.
+                            Mauris ac mauris sed pede pellentesque fermentum. Maecenas adipiscing ante non diam sodales hendrerit.
+                        </p>
+                    </div>
+                </div>
+            
+                <div class="row">
+                    <div class="col-12">
+                        <p class="titleP mt-3">Nos valeurs</p>
+                        <p class="w-75 mx-auto">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                            Sed non risus. Suspendisse lectus tortor, dignissim sit amet, adipiscing nec, ultricies sed, dolor.
+                            Cras elementum ultrices diam. Maecenas ligula massa, varius a, semper congue, euismod non, mi.
+                            Proin porttitor, orci nec nonummy molestie, enim est eleifend mi, non fermentum diam nisl sit amet erat.
+                            Duis semper. Duis arcu massa, scelerisque vitae, consequat in, pretium a, enim.
+                            Pellentesque congue. Ut in risus volutpat libero pharetra tempor. Cras vestibulum bibendum augue.
+                            Praesent egestas leo in pede. Praesent blandit odio eu enim. Pellentesque sed dui ut augue blandit sodales.
+                            Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Aliquam nibh.
+                            Mauris ac mauris sed pede pellentesque fermentum. Maecenas adipiscing ante non diam sodales hendrerit.
+                        </p>
+                    </div>
+            
+                </div>
+            
+                <div class="row">
+                    <div class="col-12">
+                        <p class="titleP mt-3 mb-5">Ils nous font confiance</p>
+                    </div>
+            
+                </div>
+            
+                <div class="row">
+                    <div class=" d-flex justify-content-between w-100 mb-5">
+                        <div class="col-2 d-flex justify-content-center">
+                            <img src="Assets/img/logoApple.png" class="imgLogo" alt="">
+                        </div>
+                        <div class="col-2 d-flex justify-content-center">
+                            <img src="Assets/img/logoGoogle.png" class="imgLogo" alt="">
+                        </div>
+                        <div class="col-2 d-flex justify-content-center">
+                            <img src="Assets/img/logoMicrosoft.png" class="imgLogo" alt="">
+                        </div>
+                        <div class="col-2 d-flex justify-content-center">
+                            <img src="Assets/img/logoSamsung.png" class="imgLogo" alt="">
+                        </div>
+                        <div class="col-2 d-flex justify-content-center">
+                            <img src="Assets/img/logoSony.png" class="imgLogo" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    <!-- Fin acceuil -->
+    
+    <!-- Début footer -->
+        <footer class="row d-flex align-items-center text-uppercase">
+                    <div class="col-12 col-sm-3">
+                        <p>CGU & CGV | Mentions légales</p>
+                    </div>
+                    <div class="col-12 col-sm-3">
+                        <p class="choixCouleur">Mode de paiment</p>
+                        <i class="fab fa-cc-visa littleLogo"></i>
+                        <i class="fab fa-cc-paypal littleLogo"></i>
+                        <i class="fab fa-cc-apple-pay littleLogo"></i>
+                    </div>
+                    <div class="col-12 col-sm-3">
+                        <p class="choixCouleur">Nos livreurs</p>
+                        <i class="fab fa-ups littleLogo"></i>
+                        <i class="fab fa-dhl littleLogo"></i>
+                        <i class="fab fa-fedex littleLogo"></i>
+                    </div>
+                    <div class="col-12 col-sm-3">
+                        <p>Politique de retour</p>
+                    </div>
+        </footer>
+<!-- Fin Footer -->
+
+<!-- Modal Iphone 12 Pro Max -->
+<div class="modal fade" id="modalIphone12ProMax" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Iphone 12 Pro Max</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-12 col-md-6">
+                        <img class="imgItems" src="assets/img/iphone12ProMaxSeul.png" alt="">
+                    </div>
+                    <div class="col-12 col-md-6 text-md-left text-center mt-4">
+                        <div>
+                            <select class="custom-select mb-3" id="qt" required>
+                                <option selected disabled value="">Couleur</option>
+                                <option>Noir</option>
+                                <option>Bleu</option>
+                                <option>Blanc</option>
+                                <option>Rouge</option>
+                            </select>
+                        </div>
+                        <div>
+                            <select class="custom-select" id="validationCustom04" required>
+                                <option selected disabled value="">Stockage</option>
+                                <option>64go</option>
+                                <option>128go (+50€)</option>
+                                <option>256go (+100€)</option>
+                                <option>512go (+150€)</option>
+                            </select>
+                        </div>
+                        <div class="text-center">
+                            <p class="priceItem">1 250,00 € TTC</p>
+                            <span class="deliveredItem">Livré entre 1 et le 15 Décembre</span>
+                            <div class="addShoppingCart btn btn-success col-12" onclick="addPanier()">Ajouter au panier</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Fermer</button>
+        </div>
+      </div>
+    </div>
+</div>
+<!-- Fin Modal Iphone 12 Pro Max -->
+
+<!-- Modal Iphone 12 Pro -->
+<div class="modal fade" id="modalIphone12Pro" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Iphone 12 Pro</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-12 col-md-6">
+                        <img class="imgItems " src="assets/img/iphoneProMini.png" alt="">
+                    </div>
+                    <div class="col-12 col-md-6 text-md-left text-center mt-4">
+                        <div>
+                            <select class="custom-select mb-3" id="selector" required>
+                                <option selected disabled value="Select Couleur">Couleur</option>
+                                <option class="choixCouleur">Noir</option>
+                                <option class="choixCouleur">Bleu</option>
+                                <option class="choixCouleur">Blanc</option>
+                                <option class="choixCouleur">Rouge</option>
+                            </select>
+                        </div>
+                        <div>
+                            <select class="custom-select"  required>
+                                <option selected disabled value="">Stockage</option>
+                                <option>64go</option>
+                                <option>128go (+50€)</option>
+                                <option>256go (+100€)</option>
+                                <option>512go (+150€)</option>
+                            </select>
+                        </div>
+                        <div class="text-center">
+                            <p class="priceItem">1 100,00 € TTC</p>
+                            <span class="deliveredItem">Livré entre 1 et le 15 Décembre</span>
+                            <div class="addShoppingCart btn btn-success col-12" onclick="addPanier()">Ajouter au panier</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Fermer</button>
+        </div>
+      </div>
+    </div>
+</div>
+<!-- Fin Modal Iphone 12 Pro-->
+
+<!-- Modal Iphone 11 Pro Max-->
+<div class="modal fade" id="modalIphone11Pro" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Iphone 11 Pro</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-12 col-md-6">
+                        <img class="imgItems" src="assets/img/apple-iphone-11-pro-max.png" alt="">
+                    </div>
+                    <div class="col-12 col-md-6 text-md-left text-center mt-4">
+                        <div>
+                            <select class="custom-select mb-3" required>
+                                <option selected disabled value="">Couleur</option>
+                                <option>Noir</option>
+                                <option>Bleu</option>
+                                <option>Blanc</option>
+                                <option>Rouge</option>
+                            </select>
+                        </div>
+                        <div>
+                            <select class="custom-select" id="validationCustom04" required>
+                                <option selected disabled value="">Stockage</option>
+                                <option>64go</option>
+                                <option>128go (+50€)</option>
+                                <option>256go (+100€)</option>
+                                <option>512go (+150€)</option>
+                            </select>
+                        </div>
+                        <div class="text-center">
+                            <p class="priceItem">800,00 € TTC</p>
+                            <span class="deliveredItem">Livré entre 1 et le 15 Décembre</span>
+                            <div class="addShoppingCart btn btn-success col-12" onclick="addPanier()">Ajouter au panier</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Fermer</button>
+        </div>
+      </div>
+    </div>
+</div>
+<!-- Fin Modal Iphone 11 Pro Max -->
+
+<!-- Modal Iphone 11 -->
+<div class="modal fade" id="modalIphone11" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Iphone 11</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-12 col-md-6">
+                        <img class="imgItems" src="assets/img/iphone 11 violet.jpg" alt="">
+                    </div>
+                    <div class="col-12 col-md-6 text-md-left text-center mt-4">
+                        <div>
+                            <select class="custom-select mb-3" id="validationCustom04" required>
+                                <option selected disabled value="">Couleur</option>
+                                <option>Noir</option>
+                                <option>Violet</option>
+                                <option>Jaune</option>
+                                <option>Rouge</option>
+                            </select>
+                        </div>
+                        <div>
+                            <select class="custom-select" id="validationCustom04" required>
+                                <option selected disabled value="">Stockage</option>
+                                <option>64go</option>
+                                <option>128go (+50€)</option>
+                                <option>256go (+100€)</option>
+                                <option>512go (+150€)</option>
+                            </select>
+                        </div>
+                        <div class="text-center">
+                            <p class="priceItem">700,00 € TTC</p>
+                            <span class="deliveredItem">Livré entre 1 et le 15 Décembre</span>
+                            <div class="addShoppingCart btn btn-success col-12" onclick="addPanier()">Ajouter au panier</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Fermer</button>
+        </div>
+      </div>
+    </div>
+</div>
+<!-- Fin Modal Iphone 11 -->
+
+<!-- Modal Samsung Galaxy S20 Plus -->
+<div class="modal fade" id="modalSamsungGalaxyS20Plus" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Samsung Galaxy S20 Plus</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-12 col-md-6">
+                        <img class="imgItems" src="assets/img/samsung S20 small.jpg" alt="">
+                    </div>
+                    <div class="col-12 col-md-6 text-md-left text-center mt-4">
+                        <div>
+                            <select class="custom-select mb-3" id="validationCustom04" required>
+                                <option selected disabled value="">Couleur</option>
+                                <option>Noir</option>
+                                <option>Violet</option>
+                                <option>Jaune</option>
+                                <option>Rouge</option>
+                            </select>
+                        </div>
+                        <div>
+                            <select class="custom-select" id="validationCustom04" required>
+                                <option selected disabled value="">Stockage</option>
+                                <option>64go</option>
+                                <option>128go (+50€)</option>
+                                <option>256go (+100€)</option>
+                                <option>512go (+150€)</option>
+                            </select>
+                        </div>
+                        <div class="text-center">
+                            <p class="priceItem">900,00 € TTC</p>
+                            <span class="deliveredItem">Livré entre 1 et le 15 Décembre</span>
+                            <div class="addShoppingCart btn btn-success col-12" onclick="addPanier()">Ajouter au panier</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Fermer</button>
+        </div>
+      </div>
+    </div>
+</div>
+<!-- Fin Modal Samsung Galaxy S20 plus -->
+
+<!-- Modal Samsung Galaxy S10 -->
+<div class="modal fade" id="modalSamsungGalaxyS10" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Samsung Galaxy S10</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-12 col-md-6">
+                        <img class="imgItems" src="assets/img/samsung-galaxy-s10-plus.jpg" alt="">
+                    </div>
+                    <div class="col-12 col-md-6 text-md-left text-center mt-4">
+                        <div>
+                            <select class="custom-select mb-3" id="validationCustom04" required>
+                                <option selected disabled value="">Couleur</option>
+                                <option>Noir</option>
+                                <option>Violet</option>
+                                <option>Jaune</option>
+                                <option>Rouge</option>
+                            </select>
+                        </div>
+                        <div>
+                            <select class="custom-select" id="validationCustom04" required>
+                                <option selected disabled value="">Stockage</option>
+                                <option>64go</option>
+                                <option>128go (+50€)</option>
+                                <option>256go (+100€)</option>
+                                <option>512go (+150€)</option>
+                            </select>
+                        </div>
+                        <div class="text-center">
+                            <p class="priceItem">800,00 € TTC</p>
+                            <span class="deliveredItem">Livré entre 1 et le 15 Décembre</span>
+                            <div class="addShoppingCart btn btn-success col-12" onclick="addPanier()">Ajouter au panier</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Fermer</button>
+        </div>
+      </div>
+    </div>
+</div>
+<!-- Fin Modal Samsung Galaxy S10 -->
+
+<!-- Modal Samsung Galaxy S9 -->
+<div class="modal fade" id="modalSamsungGalaxyS9" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Samsung Galaxy S9</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-12 col-md-6">
+                        <img class="imgItems" src="assets/img/samsungs10.jpg" alt="">
+                    </div>
+                    <div class="col-12 col-md-6 text-md-left text-center mt-4">
+                        <div>
+                            <select class="custom-select mb-3" id="validationCustom04" required>
+                                <option selected disabled value="">Couleur</option>
+                                <option>Noir</option>
+                                <option>Violet</option>
+                                <option>Jaune</option>
+                                <option>Rouge</option>
+                            </select>
+                        </div>
+                        <div>
+                            <select class="custom-select" id="validationCustom04" required>
+                                <option selected disabled value="">Stockage</option>
+                                <option>64go</option>
+                                <option>128go (+50€)</option>
+                                <option>256go (+100€)</option>
+                                <option>512go (+150€)</option>
+                            </select>
+                        </div>
+                        <div class="text-center">
+                            <p class="priceItem">400,00 € TTC</p>
+                            <span class="deliveredItem">Livré entre 1 et le 15 Décembre</span>
+                            <div class="addShoppingCart btn btn-success col-12" onclick="addPanier()">Ajouter au panier</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Fermer</button>
+        </div>
+      </div>
+    </div>
+</div>
+<!-- Fin Modal Samsung Galaxy S9 -->
+
+<!-- Modal Samsung Galaxy S8 -->
+<div class="modal fade" id="modalSamsungGalaxyS8" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Samsung Galaxy S8</h5>
+          <button type="button" class="close" data-dismiss="modal" data-target="panierFinal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body cart-items">
+            <div class="container-fluid">
+                <div class="row cart-row">
+                    <div class="col-12 col-md-6">
+                        <img class="imgItems" src="assets/img/galaxy s8 violet.jpg" alt="">
+                    </div>
+                    <div class="col-12 col-md-6 text-md-left text-center mt-4">
+                        <div>
+                            <select class="custom-select mb-3 choiceColor" required>
+                                <option selected disabled value="">Couleur</option>
+                                <option>Noir</option>
+                                <option>Violet</option>
+                                <option>Jaune</option>
+                                <option>Rouge</option>
+                            </select>
+                        </div>
+                        <div>
+                            <select class="custom-select choiceRam" required>
+                                <option selected disabled value="">Stockage</option>
+                                <option>64go</option>
+                                <option>128go (+50€)</option>
+                                <option>256go (+100€)</option>
+                                <option>512go (+150€)</option>
+                            </select>
+                        </div>
+                        <div class="text-center">
+                            <p class="priceItem">300,00 € TTC</p>
+                            <span class="deliveredItem">Livré entre 1 et le 15 Décembre</span>
+                            <div class="btn btn-success col-12" onclick="addPanier()">Ajouter au panier</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Fermer</button>
+        </div>
+      </div>
+    </div>
+</div>
+<!-- Fin Modal Samsung Galaxy S8 -->
+
+<!-- modal panier  -->
+<div class="modal fade" id="modalPanier" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="panierFinal">Votre Panier</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body" id="panier">
+                <div class="d-flex border-bottom">
+                    <div class="d-flex">
+                        <img class="imgPanierArticle" src="assets/img/apple-iphone-11-pro-max.png" alt="">
+                        <div>
+                            <h3>Iphone 11 Pro Max</h3>
+                            <div class="d-flex">
+                                <i>En stock</i>
+                                <div class="ml-3 font-weight-bold">
+                                    <p class="m-0">128go RAM</p>
+                                    <p class="m-0">Couleur : Noir</p>
+                                </div>
+                            </div>
+                            
+                        </div>
+                    </div>
+                    
+                    <div>
+                        <p class="selectPriceItem affichagePricePanier">1200<span>€</span></p>
+                        <span class="d-none priceFantome">1200</span>
+                        <select name="selectNumberPanier" class="selectPanier">
+                            <option class="testScript" value="1">1</option>
+                            <option class="testScript" value="2">2</option>
+                            <option class="testScript" value="3">3</option>
+                            <option class="testScript" value="4">4</option>
+                            <option class="testScript" value="5">5</option>
+                        </select>
+                        <p class="btn btn-success d-flex mt-3">Supprimer</p>
+                    </div>
+                </div>
+                <div>
+                    <h4 class="mt-3 finalPrice">Total : <span>1500,00 €</span></h4>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Fermer</button>
+                <button type="button" class="btn btn-primary" onclick="myFunction()">Valider votre panier</button>
+                <div id="snackbar">Votre panier a bien été validé. Merci de votre commande ! :)</div>
+            </div>
+        </div>
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js" integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s" crossorigin="anonymous"></script>
+        <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+        <script src="assets/script.js"></script>
+
+</body>
+
+</html>
